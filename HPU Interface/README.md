@@ -2,6 +2,11 @@
 
 This is the code for hosting HPU Interface locally on your computer. One can install any of the popular apache web development environment. I used xampp which can be found [here]. The description of the four exteriments are as follows:
 
+* HPU1: Draw the bounding boxes without any prior CPU algorithm.
+* HPU2: Given a CPU algorithm, Click on all detected bounding boxes that do not contain pedestrians.
+* HPU3: Given a CPU prediction, Locate and draw bounding boxes around pedestrians that have NOT been detected.
+* HPU4: Given a CPU algorithm, click on objects not enclosed by bounding box. Then, the CPU chooses the bounding box from the predicted boxes below the threshold to place round it 
+
 ### How to run the Interface:
 * Save the folder contents in your localhost folder (usually at /var/www/html )
 * Initialize all .count files to '1' and clear all .data files in the /data/log folder
