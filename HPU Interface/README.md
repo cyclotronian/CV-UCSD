@@ -21,7 +21,7 @@ Example: 10 3 2.848 1 0 0
 * hpu3.data: [image_id] [no. of new boxes] [time in seconds] [x-coord, y-coord, width, height]                  
 Example: 12 1 5.19 119.99 36.42 150 300
 * hpu4.data: [image_id] [no. of new boxes] [time in seconds] [x-coord, y-coord]                   
-14 1 4.59 389.69 181.75
+Example: 14 1 4.59 389.69 181.75
 
 ### How to modify the code for your own purposes:
 
@@ -31,7 +31,7 @@ The areas of the code you need to modify are as follows:
 
 That's it! You are ready to go..! Run the interface, record your data and plot the graphs. 
 
-NOTE: This interface is designed for pedestrian dataset. Hence, those working on other datasets may need to modify the click_handler(), x_handler() and z_handler() functions in hpu1.js, hpu3.js and hpu4.js. This is because the default box created on clicking the image will have different aspect ratio for different dataset. Here is an example for car dataset: 
+NOTE 1: This interface is designed for pedestrian dataset. Hence, those working on other datasets may need to modify the click_handler(), x_handler() and z_handler() functions in hpu1.js, hpu3.js and hpu4.js. This is because the default box created on clicking the image will have different aspect ratio for different dataset. Here is an example for car dataset: 
 
 
 
@@ -65,7 +65,7 @@ NOTE: This interface is designed for pedestrian dataset. Hence, those working on
     ...
 	}
 
-NOTE2: The 'Postman' extention in chrome is helpful in debugging the GET requests. 
+NOTE 2: The 'Postman' extention in chrome is helpful in debugging the GET requests. 
 
 	
 	
