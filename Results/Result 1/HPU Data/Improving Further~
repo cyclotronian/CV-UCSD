@@ -1,0 +1,6 @@
+In hpu2, be more strict in removing the false positives
+Conclusion expected:
+cpu: not so good at TP, FP, FN
+hpu1: must be good at all three TP, FP, FN
+hpu2: improves FP
+hpu3: improves FN and TP
