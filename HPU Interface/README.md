@@ -40,40 +40,40 @@ NOTE 1: This interface is designed for pedestrian dataset. Hence, those working 
 
 
 
-	function click_handler(cx, cy) {
-	    ...
-	    if(!new_box && current_box == -1) {
-		new_box = true;
+  function click_handler(cx, cy) {
+      ...
+      if(!new_box && current_box == -1) {
+    new_box = true;
 
-		x = cx / image.scale - 50;
-		y = cy / image.scale - 20;
-		w = 100;
-		h = 40;
+    x = cx / image.scale - 50;
+    y = cy / image.scale - 20;
+    w = 100;
+    h = 40;
 
-		image.temp_box = new Box(-2, x, y, w, h, image);
-		image.active_box = -2;
-		...
-	}
-	
-	function x_handler() {
+    image.temp_box = new Box(-2, x, y, w, h, image);
+    image.active_box = -2;
     ...
-			var cx = image.boxes[index].x + 0.5 * image.boxes[index].w;
-			var cy = image.boxes[index].y + 0.5 * image.boxes[index].h;
-
-			if(image.boxes[index].w < 135) {
-
-				image.boxes[index].w += 1.25 * image.scale;
-				image.boxes[index].h += 0.5 * image.scale;
-
-				image.boxes[index].x = cx - 0.5 * image.boxes[index].w;
-				image.boxes[index].y = cy - 0.5 * image.boxes[index].h;
+  }
+  
+  function x_handler() {
     ...
-	}
+      var cx = image.boxes[index].x + 0.5 * image.boxes[index].w;
+      var cy = image.boxes[index].y + 0.5 * image.boxes[index].h;
+
+      if(image.boxes[index].w < 135) {
+
+        image.boxes[index].w += 1.25 * image.scale;
+        image.boxes[index].h += 0.5 * image.scale;
+
+        image.boxes[index].x = cx - 0.5 * image.boxes[index].w;
+        image.boxes[index].y = cy - 0.5 * image.boxes[index].h;
+    ...
+  }
 
 NOTE 2: The 'Postman' extention in chrome is helpful in debugging the GET requests. 
 
 [here]: https://www.apachefriends.org/download.html
-	
+  
 
 
 
